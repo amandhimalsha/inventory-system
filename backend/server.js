@@ -25,3 +25,8 @@ console.log("Mongo URI:", process.env.MONGO_URI);
 //register brand routes
 const brandRoutes = require("./routes/brandRoutes");
 app.use("/api/brands", brandRoutes);
+
+//register product routes
+const productRoutes = require("./routes/productRoutes");
+app.use("/api/products", productRoutes);
+
